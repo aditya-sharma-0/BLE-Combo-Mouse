@@ -12,12 +12,19 @@ An **ESP32-BLE based wireless air mouse** with **motion sensing, joystick, and b
 ---
 
 ## 🛠️ Hardware & Tools  
-- ESP32 Dev Board (Lolin D32)  
-- MPU6050 (Gyroscope + Accelerometer)  
-- Joystick Module  
-- Tactile Push Buttons  
-- Arduino IDE / PlatformIO  
-- BLE HID Library  
+
+- ESP32 Dev Board (Wemos Lolin D32 recommended; most ESP32 dev boards work)
+
+- MPU6050 (Gyroscope + Accelerometer, GY-521 breakout)
+
+- Joystick Module (optional)
+
+- Tactile Push Buttons (2x for left/right click)
+
+- Arduino IDE / PlatformIO
+
+- BLE HID Library (ESP32 BLE Mouse), Adafruit MPU6050 + Unified Sensor
+ 
 
 ---
 
@@ -37,12 +44,19 @@ BLE-Combo-Mouse/
    git clone https://github.com/aditya-sharma0/BLE-Combo-Mouse.git
    cd BLE-Combo-Mouse
 2. Open project in Arduino IDE.
-3. Install required libraries:
-- ESP32 BLE
-- MPU6050
-- Upload code to ESP32.
-- Pair ESP32 with your PC via Bluetooth.
-4. Move the controller like an air mouse and use joystick/buttons for control.
+
+3. Install required libraries (Library Manager):
+
+   - ESP32 BLE Mouse (T-vK)
+   - Adafruit MPU6050
+   - Adafruit Unified Sensor
+
+4. Upload code to ESP32 (Board: ESP32 Dev Module or your board; Partition: Default).
+
+5. Pair ESP32 with your PC via Bluetooth (“ESP32 BLE Mouse”).
+
+6. Move the controller like an air mouse and use joystick/buttons for control.
+
 
    ---
 
@@ -60,6 +74,8 @@ BLE-Combo-Mouse/
 - Explore sensor fusion (Kalman filter) for better accuracy.
 
 - Add gesture recognition (e.g., hand tilt = specific action).
+
+- Battery-powered fully wireless build using Lolin D32 and a LiPo battery .
 
 - Extend to robot/wheelchair control for accessibility.
 
