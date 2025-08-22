@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+build/
+.pio/
+.pioenvs/
+.clangd/
+*.bin
+*.elf
+*.map
+*.hex
+.cache/
+.tmp/
+.pytest_cache/
+*.log
